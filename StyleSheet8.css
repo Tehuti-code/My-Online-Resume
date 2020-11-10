@@ -1,0 +1,304 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: lightblue;
+    max-width: 900px;
+}
+
+main {
+    display: flex;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+
+aside {
+    background: lightgrey;
+    width: 30%;    
+    margin-right: 0px;
+}
+
+
+article {
+    width: 60%;
+    margin-left: 0px;
+}
+
+
+
+
+.sidebar .img_holder {
+    text-align: center;
+    padding: 20px 0;
+}
+
+    .sidebar .img_holder img {
+        width: 200%;
+        border-radius: 30px;
+    }
+
+.pb {
+    padding-bottom: 20px;
+}
+
+
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+    color: green;
+    position: relative;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+    .title:before {
+        content: "";
+        position: absolute;
+        top: 35px;
+        right: 0;
+        width: 30%;
+        height: 10%;
+        background: teal;
+    }
+
+.sidebar .icon {
+    font-size: 20px;
+    color: teal
+}
+
+.sidebar .text {
+    color: green;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact .li_wrap {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+    .contact .li_wrap .icon {
+        width: 50px;
+        height: 50px;
+        background: aqua;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .li_wrap .text {
+        width: calc(100% - 10px);
+        word-break: break-word;
+        color: blue;
+    }
+
+.hobbies .li_wrap .icon {
+    width: 50px;
+    height: 50px;
+    background: aqua;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hobbies .li_wrap {
+    background: white;
+}
+
+.hobbies ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.hobbies .li_wrap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    .hobbies .li_wrap .text {
+        margin-top: 5px;
+    }
+
+
+
+
+.hobbies .li_wrap {
+    border: 2px solid grey;
+}
+
+    .hobbies .li_wrap .icon,
+    .hobbies .li_wrap .text {
+        color: blue;
+    }
+
+    .hobbies .li_wrap:hover {
+        background: red;
+    }
+
+        .hobbies .li_wrap:hover .icon,
+        .hobbies .li_wrap:hover .text {
+            color: darkturquoise;
+        }
+
+
+
+.header {
+    background: lightgrey;
+    padding: 15px 30px;
+    color: black;
+    height: 240px;
+
+}
+
+
+    .header .name {
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: blue;
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+.role {
+    font-weight: bold;
+}
+
+
+
+
+.resume {
+    background: white;
+}
+
+
+.date {
+    font-weight: bold;
+    font-size: 15px;    
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+
+.school h1, h2, h3, h4 {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.school h1, h2, h3, h4, .skills {
+    
+    margin-left: 30px;
+}
+
+.exp h5, h6 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.exp h5, h6, .knowledge {
+    margin-left: 40px;
+}
+
+
+.exp ul, li {
+
+   margin-left: 15px;
+}
+
+
+
+
+
+.school {
+    display: flex;
+    padding-left: 0px;
+    margin: 20px;
+}
+
+.work {
+    display: flex;
+    padding-left: 20px;
+    margin: 0px;
+
+}
+
+
+.title, reference {
+    margin: 20px;
+}
+
+.reference {
+    margin-left: 50px;
+}
+
+.references {
+    display: flex;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-left: 15px;
+    margin: 10px;
+}
+
+.references .text {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+ 
+
+@media screen and (max-width: 550px) {
+    .main-direction {
+        flex-direction: column;
+    }
+
+    aside,
+    article {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+       
+    
